@@ -121,7 +121,7 @@ img:hover {
 }
 
 
-a {
+.a {
     font-size: 18px;
     display: block;
     margin-right: auto;
@@ -139,7 +139,7 @@ a {
     transition: transform 0.5s; /* Add transition here */
 }
 
-a::after {
+.a::after {
     content: "";
     display: block;
     position: absolute;
@@ -152,11 +152,21 @@ a::after {
     transform: translateX(-50%);
 }
 
-a:hover::after {
+.a:hover::after {
     width: 70%;
 }
 
-a:hover {
+.a:hover {
     transform: scale(1.2);/* Remove transition property here */
     background-color: rgb(146, 146, 146); /* Change background color on hover */
+}
+
+.creator-link{
+    text-align: center;
+    font-size: 16px;
+    color: #000000;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out; /* Added fade-in animation */ 
+    border: none;
+    
 }
