@@ -36,7 +36,7 @@ img:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
 }
 
-a {
+.a {
     text-align: center;
     text-decoration: none;
     display: block; /* Ensures proper centering */
@@ -65,7 +65,7 @@ a {
     }
 }
 
-a:hover {
+.a:hover {
     transform: scale(1.1); /* Zoom-in effect on hover */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
     background-color: #e0e0e0; /* Slightly darker background on hover */
@@ -144,4 +144,14 @@ p {
     to {
         opacity: 1;
     }
+}
+
+
+.creator-link{
+    text-align: center;
+    font-size: 16px;
+    color: #000000;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out; /* Added fade-in animation */ 
+    border: none;
 }
