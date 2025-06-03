@@ -1,0 +1,162 @@
+table tr th {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 20px; /* Reduced padding */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #f0f0f0; /* Added background color for better visibility */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+table tr th:hover {
+    background-color: rgb(117, 117, 117); /* Hover effect for table headers */
+}
+
+
+.td{
+    font-weight: 1000;
+}
+
+
+
+
+table tr td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 20px; /* Reduced padding */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+table tr td:hover {
+    background-color: rgb(146, 146, 146); /* Hover effect for table cells */
+}
+
+table {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    border-style: double;
+    text-align: center;
+    margin-left: auto; /* Centered table */
+    margin-right: auto;
+    margin-top: 50px;
+    width: 60%; /* Reduced table width */
+    animation: fadeIn 1s ease-in-out; /* Added fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+body {
+    background-image: url(top-view-hamburger-with-copy-space.jpg);
+    background-size: cover;           /* Make image cover the whole background */
+    background-position: center;      /* Center the image */
+    background-repeat: no-repeat;     /* Prevent tiling */
+    background-attachment: fixed;     /* Optional: keeps background fixed on scroll */
+    font-family: Arial, sans-serif;   /* Improved font */
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-top: 50px;
+    font-size: 2.5em; /* Adjusted font size */
+    animation: slideDown 1s ease-in-out; /* Added slide-down animation */
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+h2{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-top: 50px;
+    font-size: 2.5em; /* Adjusted font size */
+    animation: slideDown 1s ease-in-out; /* Added slide-down animation */
+}
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }}
+
+img {
+    display: block; /* Ensures proper centering */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+img:hover {
+    transform: scale(1.1); /* Zoom-in effect on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
+}
+
+
+a {
+    font-size: 18px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    height: 30px;
+    width: 200px;
+    background-color: rgb(117, 117, 117);
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    position: relative; /* Needed for pseudo-element positioning */
+    overflow: hidden;   /* Hide overflow of the underline */
+    transition: transform 0.5s; /* Add transition here */
+}
+
+a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 5px; /* Adjust as needed for underline position */
+    width: 0;
+    height: 2px;
+    background: #000; /* Underline color */
+    transition: width 0.4s ease;
+    transform: translateX(-50%);
+}
+
+a:hover::after {
+    width: 70%;
+}
+
+a:hover {
+    transform: scale(1.2);/* Remove transition property here */
+    background-color: rgb(146, 146, 146); /* Change background color on hover */
+}

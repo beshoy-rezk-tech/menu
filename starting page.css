@@ -1,0 +1,147 @@
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-top: 20px;
+    animation: slideDown 1s ease-in-out; /* Added slide-down animation */
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px); /* Start slightly above */
+        opacity: 0; /* Start invisible */
+    }
+    to {
+        transform: translateY(0); /* End at the original position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+img {
+    display: block; /* Ensures proper centering */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 200px; /* Explicit width */
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid #000; /* Equal border width */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    animation: fadeIn 1s ease-in-out; /* Added fade-in animation */
+}
+
+img:hover {
+    transform: scale(1.1); /* Zoom-in effect on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    display: block; /* Ensures proper centering */
+    margin: 25px auto 5px auto; /* Centered with 5px margin between boxes */
+    padding: 13px 0; /* Increased height by 3px (10px + 3px) */
+    width: 200px; /* Same width as img */
+    border: 2px solid #000; /* Equal border width */
+    border-radius: 10px;
+    background-color: #f0f0f0; /* Subtle background color */
+    color: #333;
+    font-weight: bold;
+    font-size: 18px; /* Font size increased to 10px */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth hover effect */
+    animation: slideDownFromImage 1s ease-in-out; /* Slide down animation */
+}
+
+@keyframes slideDownFromImage {
+    from {
+        transform: translateY(-30px); /* Start slightly above the image */
+        opacity: 0; /* Start invisible */
+    }
+    to {
+        transform: translateY(0); /* End at the original position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+a:hover {
+    transform: scale(1.1); /* Zoom-in effect on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
+    background-color: #e0e0e0; /* Slightly darker background on hover */
+}
+
+body {
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out; /* Added fade-in animation */
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.p {
+    text-align: center;
+    font-size: 18px;
+    color: #000000;
+    margin-top: 100px;
+    animation: slideUp 1s ease-in-out, fadeIn 1s ease-in-out; /* Added slide-up and fade-in animations */
+}
+
+/* Keyframes for slide-up animation */
+@keyframes slideUp{
+    from {
+        transform: translateY(30px); /* Start slightly below */
+        opacity: 0; /* Start invisible */
+    }
+    to {
+        transform: translateY(0); /* End at the original position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+/* Keyframes for fade-in animation (already defined) */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+p {
+    text-align: center;
+    font-size: 18px;
+    color: #000000;
+    animation: slideUp 1s ease-in-out, fadeIn 1s ease-in-out; /* Added slide-up and fade-in animations */
+}
+
+/* Keyframes for slide-up animation */
+@keyframes slideUp {
+    from {
+        transform: translateY(30px); /* Start slightly below */
+        opacity: 0; /* Start invisible */
+    }
+    to {
+        transform: translateY(0); /* End at the original position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+/* Keyframes for fade-in animation (already defined) */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
